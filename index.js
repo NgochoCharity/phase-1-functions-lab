@@ -4,7 +4,6 @@ const distanceFromHqInBlocks = (pickUpLocation) => {
   return pickUpLocation < 42 ? hq - pickUpLocation : pickUpLocation - hq;
 };
 
-// ========Takes in a distanceFromHqInBlocks and returns distanceFromHqInFeet====//
 const distanceFromHqInFeet = (pickUpLocation) => {
   return distanceFromHqInBlocks(pickUpLocation) * 264;
 };
